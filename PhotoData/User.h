@@ -6,7 +6,7 @@
 #import <Foundation/Foundation.h>
 
 
-@interface User : NSObject <NSCoding>
+@interface User : NSObject <NSCoding,NSSecureCoding>
 
 @property (nonatomic) int64_t identifier;
 @property (nonatomic, copy) NSString *username;

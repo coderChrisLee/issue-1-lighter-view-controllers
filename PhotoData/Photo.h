@@ -9,7 +9,7 @@
 @class User;
 
 
-@interface Photo : NSObject <NSCoding>
+@interface Photo : NSObject <NSCoding,NSSecureCoding>
 
 @property (nonatomic) int64_t identifier;
 @property (nonatomic, copy) NSString* name;

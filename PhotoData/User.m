@@ -36,6 +36,12 @@ static NSString * const PhotosKey = @"photos";
     return YES;
 }
 
+//(NSSecureCoding协议）---上面返回Yes 就必须实现安全编码协议
++ (BOOL)supportsSecureCoding
+{
+    return YES;
+}
+
 - (id)initWithCoder:(NSCoder *)coder
 {
     self = [super init];
